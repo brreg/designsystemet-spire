@@ -7,6 +7,8 @@ The generated Theme is a NON OFFICIAL theme that replicates the theme  for the B
 
 [![Latest release](https://img.shields.io/npm/v/%40brreg%2Fdesignsystemet-spire-theme)](https://www.npmjs.com/package/@brreg/designsystemet-spire-theme)
 
+Dette prosjektet er kopiert fra https://github.com/brreg/designsystemet/tags v0.2.11
+
 ## Gettings started:
 
 ### 1 Set up designsystemet
