@@ -1,6 +1,6 @@
 {
   "name": "@brreg/designsystemet-spire-theme",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Designsystem-tema for Brønnøysundregistrene(spire)",
   "license": "MIT",
   "repository": {
@@ -12,14 +12,20 @@
   ],
   "exports": {
     "./css/*": "./css/*",
-    ".": "./css/brreg.css"
+    ".": "./css/brreg.css",
+    "./colors": {
+      "types": "./css/generated/colors.d.ts"
+    },
+    "./types": {
+      "types": "./css/generated/types.d.ts"
+    }
   },
   "publishConfig": {
     "access": "public"
   },
   "moduleResolution": "bundler",
   "scripts": {
-    "clean": "rimraf css",
+    "clean": "rimraf css/generated",
     "test": "echo \"Error: no tests specified\" && exit 1",
     "build": "designsystemet tokens create && designsystemet tokens build --clean -o ./css/generated"
   },
