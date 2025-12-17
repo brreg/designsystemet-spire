@@ -1,15 +1,16 @@
-/* build: v1.6.1 */
-import type {} from '@digdir/designsystemet/types';
+/* build: v1.8.0 */
+import type {} from '@digdir/designsystemet-types';
 
 // Augment types based on theme
-declare module '@digdir/designsystemet/types' {
+declare module '@digdir/designsystemet-types' {
   export interface ColorDefinitions {
     main1: never;
     main2: never;
+    main3: never;
+    maintest: never;
     support1: never;
     support2: never;
-    support3: never;
-    support4: never;
+    supporttest: never;
     neutral: never;
   }
   export interface SeverityColorDefinitions {

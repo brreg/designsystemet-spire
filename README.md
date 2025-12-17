@@ -34,3 +34,8 @@ To update manually, run ```npm run build``` in your local repository.
 
 ### Publishing a new version
 To release a new version of the package automatically , just bump the version in [package.json](package.json).
+
+## ToDo
+- Konfigurer changesets
+  - Tags, release notes, PRs
+- Konfigurer kode kvalitet for CSS

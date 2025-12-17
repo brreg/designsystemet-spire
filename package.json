@@ -1,7 +1,7 @@
 {
   "name": "@brreg/designsystemet-spire-theme",
-  "version": "0.0.2",
-  "description": "Designsystem-tema for Brønnøysundregistrene-spire",
+  "version": "0.0.3",
+  "description": "Designsystem-tema for Brønnøysundregistrene(spire)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -19,11 +19,13 @@
   },
   "moduleResolution": "bundler",
   "scripts": {
+    "clean": "rimraf css",
     "test": "echo \"Error: no tests specified\" && exit 1",
-    "build": "designsystemet tokens build --clean -o ./css"
+    "build": "designsystemet tokens create && designsystemet tokens build --clean -o ./css/generated"
   },
   "devDependencies": {
-    "@digdir/designsystemet": "^1.6.1"
+    "@digdir/designsystemet": "^1.7.3",
+    "rimraf": "6.1.2"
   },
   "peerDependencies": {
     "@digdir/designsystemet-theme": "^1.0.0"
